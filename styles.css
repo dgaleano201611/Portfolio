@@ -1,0 +1,258 @@
+/* ********Resets******** */
+:root{
+  --first-color: #2E6485;
+  --first-alpha-color: rgba(46, 100, 133, 0.54);
+  --header-movile-color: rgba(99, 132, 153, 0.6);
+  --second-color: rgba(176, 181, 235, 1);
+  --second-alpha-color: rgba(176, 181, 235, 0.67);
+  --white-color: #FFFFFF;
+  --text-color: #1D3D52;
+  --font: 'Raleway', sans-serif;
+  --font-signature: 'Vujahday Script', cursive;
+  --max-width: 1200px;
+  --header-opacity: rgba(99, 132, 153, 0);
+  --black-alpha-color: rgba(0,0,0,0.5);
+
+
+
+}
+
+
+html{
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+
+}
+
+*,
+*::after,
+*::before{
+  box-sizing: inherit;
+}
+
+body{
+  overflow-x: hidden;
+  margin: 0;
+  
+}
+
+h1{
+  margin: 0;
+}
+h3{
+  margin: 0;
+}
+h5{
+  margin: 0;
+}
+
+/* ***********Components*********** */
+
+  /* ***********menú*********** */
+
+.menu-btn{
+  outline: thin solid var(--first-color);
+  border: 0;
+  cursor: pointer;
+  background-color: var(--second-alpha-color);
+}
+
+.menu-btn svg{
+  fill: var(--first-color);
+}
+
+/* ***********Utilities*********** */
+
+.container{
+  margin-left: auto;
+  margin-right: auto;
+  max-width: var(--max-width);
+}
+
+/* ***********Site Styles*********** */
+.header{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  padding: 1rem;
+  width: 100%;
+  height: 4rem;
+  background-color: var(--header-movile-color);
+}
+.header > .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu{
+  position: fixed;
+  left: 0;
+  bottom: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(29, 61, 82, 0.9);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
+}
+
+.menu.is-active{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu a{
+  text-align: center;
+  text-decoration: none;
+  padding: .5rem;
+  color: var(--second-color);
+  font-weight: bold;
+}
+
+.menu a:hover{
+  color: var(--white-color);
+  background-color: var(--first-alpha-color);
+}
+
+.logo a{
+  color: var(--white-color);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+.none{
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header{
+    position: absolute;
+    top: 0;
+    background-color: var(--header-opacity);
+  }
+  
+  .menu-btn{
+    display: none;
+  }
+
+  .menu{
+    opacity: 1;
+    position: static;
+    width: auto;
+    pointer-events: auto;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--header-opacity);
+    color: var(--white-color);
+   
+  }
+
+  .menu a{
+    color: var(--white-color);
+  }
+
+  .menu a:hover{
+    color: var(--header-movile-color);
+  }
+}
+
+
+/********************hero Image***************/
+
+.hero-image{
+ 
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-image: var(--hero-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: var(--hero-attachment);
+}
+.hero-image-opacity{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--black-alpha-color);
+}
+
+.hero-image-content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image-title{
+  color: var(--white-color);
+  font-size: 6.5vw;
+  font-weight: bold;
+  padding-bottom: 20px;
+ 
+}
+.hero-image-subtitle{
+  color: var(--white-color);
+  font-size: 4vw;
+  font-weight: bold;
+  padding-bottom: 20px;
+  
+}
+
+.hero-image-subtitle span{
+  font-weight: lighter;
+}
+
+.btn{
+  border-radius: .5rem;
+  padding: 1rem;
+  display: inline-block;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+
+
+.signature{
+  font-family: var(--font-signature);
+  font-size: 45px;
+  margin: 10px;
+}
+
+.btn-container{
+  background-color: blue;
+  width: fit-content;
+  height: fit-content;
+}
+
+.btn-container img{
+  position: relative;
+  left: 20px;
+  top: 20px;
+  
+  
+  
+}
+
+.parrafos-foto{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about{
+  padding: 20px;
+}
+
+.titulo{
+  font-size: 26px;
+  margin: 10px;
+}

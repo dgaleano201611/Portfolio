@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portartafolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Vujahday+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="header">
+    <section class="container">
+      <div class="logo">
+        <a href="index.html">DIEGODAG</a>
+      </div>
+      <button class="menu-btn">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="24" height="24" fill="#B0B5EB" fill-opacity="0.67"/>
+          <path d="M4 6H20V8H4V6ZM4 11H20V13H4V11ZM4 16H20V18H4V16Z" fill="#2E6485"/>
+        </svg>
+        <svg  class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/>
+        </svg>
+      </button>
+      <nav class="menu">
+        <a href="#inicio">Inicio</a>
+        <a href="#acerca">Acerca</a>
+        <a href="#portafolio">Portafolio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#contacto">Contácto</a>
+      </nav>
+    </section>
+  </header>
+  <section id="inicio" class="home">
+    <article class="hero-image" style="--hero-image: url('assets/hero-image.jpg'); --hero-attachment:fixed">
+      <aside class="hero-image-opacity">
+        <div class="hero-image-content">
+          <h1 class="hero-image-title">Hola</h1>
+          <h3 class="hero-image-subtitle"><span>Soy <i>FullStack</span> Developer</h3></i>
+          <a href="#contacto" class="btn">CONTÁCTAME</a>
+        </div>
+      </aside>
+    </article>
+  </section>
+  <section id="acerca" class="about">
+    <article>
+      <aside class="titulos">
+        <h5 class="titulo">Acerca de:</h5>
+        <h1 class="signature">Diego Galeano</h1>
+      </aside>
+
+      <div class="parrafos-foto">
+        <aside class="parrafos-boton">
+          <p>Soy Físico y desarrollador fullstack. Mi habilidad analítica y mis habilidades para 
+            resolver problemas me permiten abordar eficazmente temas complejos y encontrar
+            soluciones escalables.
+          </p>
+          <p>
+            He trabajado con una variedad de tecnologías y siempre estoy buscando aprender más 
+            para mejorar mi trabajo y ayudar a mi equipo a alcanzar sus objetivos
+          </p>
+          <div>
+            <a href="#contactame" class="btn">Descarga mi CV</a>
+          </div>
+        </aside>
+        <article  class="btn-container">
+          <img src="./assets/cv-picture.jpg" alt="foto">
+        </article>
+      </div>
+
+    </article>
+    
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>
