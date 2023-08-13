@@ -86,7 +86,6 @@ h5{
  .subline-title{
   font-size: 24px;
   font-weight: bold;
-  display: inline-block;
   position: relative;
   color: #333;
   text-decoration: none;
@@ -140,7 +139,8 @@ h5{
 
 .menu a:hover{
   color: var(--white-color);
-  background-color: var(--first-alpha-color);
+  transition: all .5s ease-out;
+  
 }
 
 .logo a{
@@ -149,6 +149,13 @@ h5{
   text-decoration: none;
   font-size: 1.25rem;
 }
+
+.logo a:hover{
+  color: var(--second-color);
+  transition: all .5s ease-out;
+}
+
+
 .none{
   display: none;
 }
@@ -169,7 +176,6 @@ h5{
     position: static;
     width: auto;
     pointer-events: auto;
-    display: flex;
     flex-direction: row;
     background-color: var(--header-opacity);
     color: var(--white-color);
@@ -235,6 +241,7 @@ h5{
   font-weight: lighter;
 }
 
+
 .btn{
   border-radius: .5rem;
   padding: 1rem;
@@ -245,6 +252,11 @@ h5{
   text-decoration: none;
   color: var(--white-color);
   background-color: var(--first-color);
+}
+
+.btn:hover{
+  opacity: 0.85;
+  transition: all .5s ease-out;
 }
 
 .about{
@@ -259,16 +271,21 @@ h5{
 
 
 
+.content-about{
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
 .contend-about{
   display: flex;
   flex-direction: column;
-  overflow: hidden ;
+  overflow: hidden;
   justify-content: center;
   align-items: center;
-
 }
-
-
 
 .about-photo{
   width: 100%;
@@ -553,5 +570,50 @@ h5{
   }
 }
 
+.footer{
+  text-align: center;
+  color: var(--white-color);
+  background-color: var(--first-color);
+}
+
+.social-media a {
+  padding: 0 0.4rem;
+  text-decoration: none;
+}
+
+.social-media svg {
+  width: 2rem;
+  height: 2rem;
+}
 
 
+/******Modal*******/
+
+/*
+.modal{
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--black-alpha-color);
+}
+
+.contact-form-response{
+  padding: 1rem;
+  width: 400px;
+  text-align: center;
+  background-color: var(--white-color);
+}
+
+.contact-form-response svg{
+  margin-top: 2rem;
+  width: 4rem;
+  height: 4rem;
+  fill: var(--first-color);
+}
+*/
