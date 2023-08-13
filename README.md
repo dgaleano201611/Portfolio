@@ -4,7 +4,7 @@ The portfolio is built using HTML and CSS to showcase my projects, skills, and o
 
 ## Getting Started
 
-1. **Clone the Repository:** Start by cloning this repository to your local machine using Git.
+**Clone the Repository:** Start by cloning this repository to your local machine using Git.
 
    ```
    git clone https://github.com/dgaleano201611/Portfolio.git
