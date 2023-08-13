@@ -12,11 +12,7 @@
   --max-width: 1200px;
   --header-opacity: rgba(99, 132, 153, 0);
   --black-alpha-color: rgba(0,0,0,0.5);
-
-
-
 }
-
 
 html{
   box-sizing: border-box;
@@ -159,39 +155,6 @@ h5{
 .none{
   display: none;
 }
-
-@media screen and (min-width: 1024px) {
-  .header{
-    position: absolute;
-    top: 0;
-    background-color: var(--header-opacity);
-  }
-  
-  .menu-btn{
-    display: none;
-  }
-
-  .menu{
-    opacity: 1;
-    position: static;
-    width: auto;
-    pointer-events: auto;
-    flex-direction: row;
-    background-color: var(--header-opacity);
-    color: var(--white-color);
-   
-  }
-
-  .menu a{
-    color: var(--white-color);
-  }
-
-  .menu a:hover{
-    color: var(--header-movile-color);
-  }
-}
-
-
 /********************hero Image***************/
 
 .hero-image{
@@ -266,11 +229,6 @@ h5{
   justify-content: center;
   
 }
-
-
-
-
-
 .content-about{
   display: flex;
   flex-direction: column;
@@ -436,39 +394,6 @@ h5{
   margin-right: 10px;
 }
 
-@media screen and (min-width:1024px){
-  .content-portfolio{
-    width: 100%;
-    display: flex;
-    position: relative;
-  }
-  .content-portfolio img{
-    width: 60%;
-    position: relative;
-    left: 10%;
-    
-  }
-
-  .description-portfolio{
-    width: 40%;
-    background-color: #FFFFFF;
-    position: absolute;
-    right: 10%;
-    top: 15%;
-    border-radius: .5rem;
-    -webkit-box-shadow: 0px 0px 43px -16px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 43px -16px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 43px -16px rgba(0,0,0,0.75);
-  }
-  .portfolio-links{
-    border-radius: 0 0 .5rem  .5rem;
-  }
-  .description-portfolio p{
-    margin: 10px;
-  }
-}
-
-
 .box-shadow{
   -webkit-box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 0px 20px -4px rgba(0,0,0,0.75);
@@ -498,22 +423,6 @@ h5{
 .contact-card > small{
   margin-top: -1rem;
 }
-
-@media screen and (min-width: 768px){
-  .contact-cards{
-    display: grid;
-    grid-template-columns: repeat(2, 48%);
-    justify-content: space-between;
-  }
-
-}
-
-@media screen and (min-width: 1024px){
-  .contact-cards{
-    grid-template-columns: repeat(4, 24%);
-  }
-}
-
 
 .contact-form{
   width: 90%;
@@ -557,19 +466,6 @@ h5{
   text-align: center;
 }
 
-@media screen and (min-width:1024px){
-  .contact-form{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 1rem;
-  }
-  .contact-form textarea,
-  .contact-form-loader,
-  .contact-form input[type="submit"] {
-    grid-column: span 2;
-  }
-}
-
 .footer{
   text-align: center;
   color: var(--white-color);
@@ -586,6 +482,89 @@ h5{
   height: 2rem;
 }
 
+@media screen and (min-width: 768px){
+  .contact-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: space-between;
+  }
+
+}
+
+@media screen and (min-width: 1024px) {
+  .header{
+    position: absolute;
+    top: 0;
+    background-color: var(--header-opacity);
+  }
+  
+  .menu-btn{
+    display: none;
+  }
+
+  .menu{
+    opacity: 1;
+    position: static;
+    width: auto;
+    pointer-events: auto;
+    flex-direction: row;
+    background-color: var(--header-opacity);
+    color: var(--white-color);
+   
+  }
+
+  .menu a{
+    color: var(--white-color);
+  }
+
+  .menu a:hover{
+    color: var(--header-movile-color);
+  }
+
+  .contact-form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1rem;
+  }
+  .contact-form textarea,
+  .contact-form-loader,
+  .contact-form input[type="submit"] {
+    grid-column: span 2;
+  }
+
+  .contact-cards{
+    grid-template-columns: repeat(4, 24%);
+  }
+
+  .content-portfolio{
+    width: 100%;
+    display: flex;
+    position: relative;
+  }
+  .content-portfolio img{
+    width: 60%;
+    position: relative;
+    left: 10%; 
+  }
+
+  .description-portfolio{
+    width: 40%;
+    background-color: #FFFFFF;
+    position: absolute;
+    right: 10%;
+    top: 15%;
+    border-radius: .5rem;
+    -webkit-box-shadow: 0px 0px 43px -16px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 43px -16px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 43px -16px rgba(0,0,0,0.75);
+  }
+  .portfolio-links{
+    border-radius: 0 0 .5rem  .5rem;
+  }
+  .description-portfolio p{
+    margin: 10px;
+  }
+}
 
 /******Modal*******/
 
